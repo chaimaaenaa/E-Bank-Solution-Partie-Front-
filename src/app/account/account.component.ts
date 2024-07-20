@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { AccountService } from '../services/account.service';
-import { Account } from '../models/account';
+import {Account} from "../modeles/account";
+import {AccountService} from "../service/account.service";
+
 
 @Component({
   selector: 'app-account',
   templateUrl: './account.component.html',
+  standalone: true,
   styleUrls: ['./account.component.scss']
 })
 export class AccountComponent implements OnInit {
